@@ -23,13 +23,13 @@ describe('AppComponent', () => {
   it(`should have as title 'LinkSide-Frontend'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('LinkSide-Frontend');
+    expect(app.title).toEqual('LinkSide');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('LinkSide-Frontend app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('LinkSide app is running!');
   });
 });
